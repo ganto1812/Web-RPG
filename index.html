@@ -17,43 +17,29 @@
         <li><a href="#">Help</a></li>         
     </ul>
     <div class="container">
-        <h1>
-            WELCOME TO
-        </h1>
-        <img src="box.svg" alt="box logo" class="logo">
+        <h1>WELCOME TO WEB RPG</h1>
         <div class="logIn">
-            <div id="logInWindow" class="logInWindow">
-            
-            <form class="form" action="/account.php">
-                <div class="imgcontainer">
-                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close">&times;</span>
-                    <img src="dice.png" alt="image" class="dice">
-                </div>
+            <div id="logInWindow" class="logInWindow">    
+                <form class="form" action="/account.php">
+                    <div class="imgcontainer">
+                        <img src="pics/hero.svg" alt="image" class="loginIcon">
+                    </div>
+                    <div class="miniContainer">
+                        <label for="uname"></label>
+                        <input type="username" placeholder="Username" name="user" required>
+                        <label for="psw"></label>
+                        <input type="password" placeholder="Password" name="psw" required>
+                        <button type="login" class="login btn">Login</button>
+                        <label class="remember">
+                                Remember me
+                                <input type="checkbox" checked="checked" name="remember">
+                        </label>
+                    </div>
 
-                <div class="miniContainer">
-                    <label for="uname"></label>
-                    <input type="username" placeholder="Username" name="uname" required>
-
-                    <label for="psw"></label>
-                    <input type="password" placeholder="Password" name="psw" required>
-                        
-                    <button type="login" class="login btn">Login</button>
-                    <label>
-                        <input type="checkbox" checked="checked" name="remember"> Remember me
-                    </label>
-                </div>
-
-                <div class="miniContainer">
-                    <button type="cancel" onclick="document.getElementById('id01').style.display='none'" class="cancel btn">Cancel</button>
-                    <span class="psw">Forgot <a href="#">password?</a></span>
-                </div>
-            </form>
-            </div>
-
-
-
-
-
+                    <div class="miniContainer">
+                        <span class="psw">Forgot <a href="#">password?</a></span>
+                    </div>
+                </form>
         </div>
     
     </div>
