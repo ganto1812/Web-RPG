@@ -5,19 +5,152 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>RPG Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
-    <script src="index.js"></script>
 </head>
 <body>
-    <ul>
-        <li><a href="#">Home</a></li>         
-        <li><a href="#">Account</a></li>         
-        <li><a href="#">Settings</a></li>         
-        <li><a href="#">About</a></li>         
-        <li><a href="#">Help</a></li>         
-    </ul>
+    <!-- Navbar -->
+    <div class="navbar fixed-top navbar-expand-lg navbar-dark" id="navbar">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active"><a class="nav-link" href="#home">Home</a></li>         
+            <li class="nav-item"><a class="nav-link" href="#account">Account</a></li>         
+            <li class="nav-item"><a class="nav-link" href="#settings">Settings</a></li>         
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>         
+            <li class="nav-item"><a class="nav-link" href="#help">Help</a></li>         
+        </ul>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+    <!-- Big Container -->
     <div class="container">
-        <h1>WELCOME TO WEB RPG</h1>
+        <!-- Home Box -->
+        <div class="box">
+            <h1 class="welcome">WELCOME TO WEB RPG</h1>
+            <p>Welcome to the first RPG made by us for us!</p>
+            <!-- Meet the crew -->
+            <div class="section">
+                <h2>Meet the crew</h2>
+                <img src="pics/l1.png">
+                <h3>Margoul</h3>
+                <ul>
+                    <li>Alias: Senpai</li>
+                    <li>Country: France</li>
+                    <li>Superpower: Sound super french</li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <img src="pics/l2.png">
+                <h3>Sleepy</h3>
+                <ul>
+                    <li>Alias: Flippy</li>
+                    <li>Country: ?</li>
+                    <li>Superpower: Flip super hard</li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <img src="pics/l3.png">
+                <h3>Paralogic</h3>
+                <ul>
+                    <li>Alias: Alex, Sasha</li>
+                    <li>Country: Austria</li>
+                    <li>Superpower: Contagious laugh, twitch thot</li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <img src="pics/l4.png">
+                <h3>Deus</h3>
+                <ul>
+                    <li>Alias: Dus, Bot, Alex2</li>
+                    <li>Country: Austria</li>
+                    <li>Superpower: Super loudness, amazing painting skills</li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <img src="pics/l5.png">
+                <h3>Ulvhagel</h3>
+                <ul>
+                    <li>Alias: Ulvi, Doggo</li>
+                    <li>Country: Sweeden</li>
+                    <li>Superpower: Youtuber, Meme maker, HEY (*sweddish*)</li>
+                    <li></li>
+                    <li></li>
+                    </ul>
+                    <img src="pics/l6.png">
+                    <h3>Pearl</h3>
+                <ul>
+                    <li>Alias: Grill</li>
+                    <li>Country: ?</li>
+                    <li>Superpower: Cute voice</li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <img src="pics/l7.png">
+                <h3>Left4Tails</h3>
+                <ul>
+                    <li>Alias: Tails, Irish guy</li>
+                    <li>Country: Tails, Irish guy</li>
+                    <li>Superpower: Weelchair, RP</li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <img src="pics/l8.png">
+                <h3>Jade</h3>
+                <ul>
+                    <li>Alias: Yanick, Janik, ...</li>
+                    <li>Country: Germany</li>
+                    <li>Superpower: Coding skills</li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <!-- Videos -->
+            <div class="section">
+                <h2>Videos</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/D_3zwxDf0ik" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <p>Here are some videos from the crew!
+                </p>
+            </div>
+            <!-- Images -->
+            <div class="section images">
+                <h2>Images</h2>
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active"><img class="d-block w-100" src="pics/vr1.png"></div>
+                        <div class="carousel-item"><img class="d-block w-100" src="pics/vr2.png"></div>
+                        <div class="carousel-item"><img class="d-block w-100" src="pics/vr3.png"></div>
+                        <div class="carousel-item"><img class="d-block w-100" src="pics/vr4.png"></div>
+                        <div class="carousel-item"><img class="d-block w-100" src="https://cdn.discordapp.com/attachments/447022468520083456/455448834240413697/unknown.png"></div>
+                        <div class="carousel-item"><img class="d-block w-100" src="https://cdn.discordapp.com/attachments/447022468520083456/455451026984796172/unknown.png"></div>
+                        <div class="carousel-item"><img class="d-block w-100" src="https://cdn.discordapp.com/attachments/437346018716286981/440200368459350029/unknown.png"></div>
+                        <div class="carousel-item"><img class="d-block w-100" src="https://cdn.discordapp.com/attachments/474612535589339139/474934860834668576/floor.png"></div>
+                        <div class="carousel-item"><img class="d-block w-100" src="https://cdn.discordapp.com/attachments/437346018716286981/444605844005322762/unknown-2.png"></div>
+                        <div class="carousel-item"><img class="d-block w-100" src="https://cdn.discordapp.com/attachments/437346018716286981/444588900715986965/unknown.png"></div>
+                        <div class="carousel-item"><img class="d-block w-100" src="https://cdn.discordapp.com/attachments/437346018716286981/471760128220200971/unknown.png"></div>
+                        <div class="carousel-item"><img class="d-block w-100" src="https://cdn.discordapp.com/attachments/437346018716286981/451825924367712283/unknown.png"></div>
+                        <div class="carousel-item"><img class="d-block w-100" src="https://cdn.discordapp.com/attachments/437346018716286981/452604358509461515/unknown.png"></div>
+                        <div class="carousel-item"><img class="d-block w-100" src="https://cdn.discordapp.com/attachments/437346018716286981/453681054268653588/unknown.png"></div>
+                        <div class="carousel-item"><img class="d-block w-100" src="https://cdn.discordapp.com/attachments/437346018716286981/453681113009881108/Conan_Drawing.png"></div>
+                        <div class="carousel-item"><img class="d-block w-100" src="https://cdn.discordapp.com/attachments/474612535589339139/475325869162889220/spank.png"></div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                          </a>
+                    <p>Some of our adventures!</p>
+                </div>
+            </div>
+            
+        </div>
+        <!-- Log In Box -->
         <div class="logIn">
             <div id="logInWindow" class="logInWindow">    
                 <form class="form" action="/account.php">
@@ -31,17 +164,19 @@
                         <input type="password" placeholder="Password" name="psw" required>
                         <button type="login" class="login btn">Login</button>
                         <label class="remember">
-                                Remember me
-                                <input type="checkbox" checked="checked" name="remember">
+                            Remember me
+                            <input type="checkbox" checked="checked" name="remember">
                         </label>
                     </div>
-
+                    
                     <div class="miniContainer">
                         <span class="psw">Forgot <a href="#">password?</a></span>
+                        <span class="signUp">Don't have an account? <a href="#">Sign Up</a></span>
                     </div>
                 </form>
+            </div>
         </div>
-    
     </div>
+    <script src="index.js"></script>
 </body>
 </html>

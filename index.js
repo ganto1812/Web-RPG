@@ -1,4 +1,6 @@
 
+
+    // GAME
 let charisma;
 let charismaMod;
 charismaMod = parseInt((charisma - 10) / 2);

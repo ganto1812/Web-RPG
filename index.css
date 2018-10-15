@@ -1,50 +1,59 @@
+
 body {
     font-family: Verdana,sans-serif;
     margin: 0;
+    background-image: url(pics/dice.svg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Navbar */
+ .navbar {
+    background-color: #530000;
+    height: 60px;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    background-image: linear-gradient(#1a0000, #350000);
-    overflow: hidden;
-}
-
-ul li{
-    float: left;
-    padding: 10px;
-}
-ul li:hover{
-    background-color: #351414;
-}
-
-ul li a{
-    color: #f5f5f5;
+.navbar li a{
     font-size: 20px;
-    padding: 30px;
-    text-decoration: none;
-}
+    margin: 0 10px;
+} 
 
+/* Home */
 .container {
     display: flex;
     padding: 100px;
-    color: #f5f5f5;
-    background-color: black;
-    background-image: url(pics/dice.svg);
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.9);
 }
-
-.logo {
-
-    float: left;
-}
-.logoIcon {
-    margin: 20px;
-    width: 30%;
+.box {
     display: block;
+    width: 70%;
 }
+
+
+.welcome {
+    color: #530000;
+}
+
+.section {
+    margin-top: 200px;
+    text-align: center;
+}
+.section img {
+    margin-top: 50px;
+}
+.section ul {
+    list-style: none;
+}
+
+
+
+/* Log in*/ 
 .logIn {
-    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    right: 100px;
+    color: white;
+    background-color: #242424;
     width: 300px;
     margin: auto auto;
     padding: 20px;
@@ -88,13 +97,11 @@ input {
 .login:hover{
 background-color: #39883c
 }
-
-
 .psw {
     float: right;
     padding: 16px;
 }
-
 .remember {
     display: inline;
 }
+/* End of Log In */
