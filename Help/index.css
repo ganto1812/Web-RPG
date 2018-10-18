@@ -21,27 +21,9 @@ body {
 /* Home */
 .container {
     display: flex;
-    padding: 100px;
+    margin: 100px;
     color: whitesmoke;
-    background-color: rgba(0, 0, 0, 0.9);
-}
-.box {
-    display: block;
-    width: 70%;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
-
-.welcome {
-    color: #530000;
-}
-
-.section {
-    margin-top: 150px;
-    text-align: center;
-}
-.section img {
-    margin-top: 50px;
-}
-.section ul {
-    list-style: none;
 }
