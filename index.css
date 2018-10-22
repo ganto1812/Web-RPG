@@ -1,101 +1,103 @@
-
 body {
-    font-family: Verdana,sans-serif;
-    margin: 0;
-    background-image: url(pics/dice.svg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
+  font-family: Verdana, sans-serif;
+  margin: 0;
+  background-image: url(pics/dice.svg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /* Navbar */
- .navbar {
-    background-color: #530000;
-    height: 60px;
+.navbar {
+  background-color: #530000;
+  height: 60px;
 }
 
-.navbar li a{
-    font-size: 20px;
-    margin: 0 10px;
-} 
-
-/* Home */
-.container {
-    display: flex;
-    padding: 100px;
-    color: whitesmoke;
-    background-color: rgba(0, 0, 0, 0.9);
+.navbar li a {
+  font-size: 20px;
+  margin: 0 10px;
 }
 
-.welcome {
-    color: #530000;
-}
-
-.section {
-    margin-top: 150px;
-    text-align: center;
-}
-.section img {
-    margin-top: 50px;
-}
-.section ul {
-    list-style: none;
-}
-iframe {
-    display: inline-block;
-}
-
-
-/* Log in*/ 
+/* Log in*/
 .logIn {
-    position: absolute;
-    right: 100px;
-    color: white;
-    background-color: #242424;
-    width: 300px;
-    margin: auto auto;
-    padding: 20px;
-    border-radius: 10px;
+  position: absolute;
+  right: 100px;
+  color: white;
+  background-color: #242424;
+  width: 300px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
 }
 .login form {
-    position: relative;
-    float: right;
+  position: relative;
+  float: right;
 }
 .imgcontainer {
-    text-align: center;
-    position: relative;
+  text-align: center;
+  position: relative;
 }
 
 .loginIcon {
-    width: 150px;
-    margin: 50px auto;
+  width: 150px;
+  margin: 50px auto;
 }
 
 .miniContainer input {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 20px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 20px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
 }
 
 .miniContainer .btn {
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
 }
 .login {
-    background-color: #4CAF50;
-    width: 100%;
+  background-color: #4caf50;
+  width: 100%;
 }
-.login:hover{
-background-color: #39883c
+.login:hover {
+  background-color: #39883c;
 }
 .psw {
-    float: right;
-    padding: 16px;
+  float: right;
+  padding: 16px;
 }
 .remember {
-    display: inline;
+  display: inline;
 }
 /* End of Log In */
+
+/* Home */
+.container {
+  padding: 100px;
+  margin: 0 auto;
+  color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.welcome {
+  color: #530000;
+}
+
+.section {
+  text-align: center;
+}
+.section h2 {
+  margin: 100px 0 50px;
+}
+.crewPic {
+  margin: 50px 0;
+  height: 100px;
+}
+.section ul {
+  list-style: none;
+}
+iframe {
+  margin: 50px auto;
+  display: block;
+}

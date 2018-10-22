@@ -1,11 +1,11 @@
 <?php
 
-$servername = "localhost:3306";
-$dBusername = "ganto1812";
-$dBPassword = "Papanoel1812***";
+$servername = "localhost";
+$dBUsername = "root";
+$dBPassword = "";
 $dBName = "login_system_db";
 
-$conn = mysqli_connect($servername, $dBusername, $dBPassword, $dBName);
+$conn = mysqli_connect($servername, $dBUsername, $dBPassword, $dBName);
 
 if (!$conn) {
     die("Connection failed: ".mysqli_connect_error());
