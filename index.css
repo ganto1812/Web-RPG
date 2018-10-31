@@ -6,6 +6,12 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* Alert */
+.alert {
+  z-index: 10000;
+}
+
 /* Navbar */
 .navbar {
   background-color: #530000;
@@ -20,17 +26,16 @@ body {
 /* Log in*/
 .logIn {
   position: absolute;
-  right: 100px;
+  top: 100px;
+  right: 30px;
   color: white;
   background-color: #242424;
-  width: 300px;
-  margin: auto;
-  padding: 20px;
+  width: 250px;
+  padding: 10px;
   border-radius: 10px;
 }
 .login form {
   position: relative;
-  float: right;
 }
 .imgcontainer {
   text-align: center;
@@ -42,33 +47,24 @@ body {
   margin: 50px auto;
 }
 
-.miniContainer input {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 20px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
+.miniContainer {
+  padding: 10px 10px;
+  margin: 10px auto;
+  display: block;
   box-sizing: border-box;
 }
 
 .miniContainer .btn {
   color: white;
   padding: 14px 20px;
-  margin: 8px 0;
+  margin: 30px 0 10px;
 }
-.login {
+button.login {
   background-color: #4caf50;
   width: 100%;
 }
-.login:hover {
+button.login:hover {
   background-color: #39883c;
-}
-.psw {
-  float: right;
-  padding: 16px;
-}
-.remember {
-  display: inline;
 }
 /* End of Log In */
 
@@ -90,6 +86,11 @@ body {
 .section h2 {
   margin: 100px 0 50px;
 }
+
+.userBio {
+  display: inline-block;
+  width: 300px;
+}
 .crewPic {
   margin: 50px 0;
   height: 100px;
@@ -100,4 +101,9 @@ body {
 iframe {
   margin: 50px auto;
   display: block;
+}
+.carouselImage {
+  height: 400px;
+  display: block;
+  margin: 0 auto;
 }

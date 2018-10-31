@@ -10,23 +10,23 @@
         $email = $_POST['email'];
         
         if (empty($username) || empty($password) || empty($passwordRepeat) || empty($email)) {
-            header('Location: ../index.html?error=emptyfields&user='.$username.'&mail='.$email);
+            header('Location: ../index.php?error=emptyfields&user='.$username.'&mail='.$email);
             exit();
         }
         else if (!filter_var($email, FILTER_VALIDATE_EMAIL) && !preg_match("/^[a-zA-Z0-9]*$/", $username)) {
-            header("Location: ../index.html?error=invalidmailuser");
+            header("Location: ../index.php?error=invalidmailuser");
             exit();
         }
         elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            header("Location: ../index.html?error=invalidmail&user=".$username);
+            header("Location: ../index.php?error=invalidmail&user=".$username);
             exit();
         }
         elseif (!preg_match("/^[a-zA-Z0-9]*$/", $username)) {
-            header("Location: ../index.html?error=invaliduser&mail=".$email);
+            header("Location: ../index.php?error=invaliduser&mail=".$email);
             exit();
         }
         elseif ($password !== $passwordRepeat) {
-            header("Location: ../index.html?error=passwordcheck&user=".$username."&mail=".$email);
+            header("Location: ../index.php?error=passwordcheck&user=".$username."&mail=".$email);
             exit();
         }
         else {
@@ -34,7 +34,7 @@
             $sql = "SELECT uidUsers FROM users WHERE uidUsers=?";
             $stmt =  mysqli_stmt_init($conn);
             if (!mysqli_stmt_prepare($stmt, $sql)) {
-                header("Location: ../index.html?error=sqlerror");
+                header("Location: ../index.php?error=sqlerror");
                 exit();
             }
             else {
@@ -43,14 +43,14 @@
                 mysqli_stmt_store_result($stmt);
                 $resultCheck = mysqli_stmt_num_rows($stmt);
                 if ($resultCheck > 0) {
-                    header("Location: ../index.html?error=usertaken&mail=".$email);
+                    header("Location: ../index.php?error=usertaken&mail=".$email);
                     exit();
                 }
                 else {
                     $sql = "INSERT INTO users (uidUsers, emailUsers, pwdUsers) VALUES (?, ?, ?)";
                     $stmt =  mysqli_stmt_init($conn);
                     if (!mysqli_stmt_prepare($stmt, $sql)) {
-                        header("Location: ../index.html?error=sqlerror");
+                        header("Location: ../index.php?error=sqlerror");
                         exit();
                     }
                     else {
@@ -58,7 +58,7 @@
                         
                         mysqli_stmt_bind_param($stmt, "sss", $username, $email, $hashedPwd);
                         mysqli_stmt_execute($stmt);
-                        header("Location: ../index.html?signup=success");
+                        header("Location: ../index.php?signup=success");
                         exit();
                     }
                 }
@@ -69,6 +69,6 @@
         
     }
     else {
-        header("Location: ../index.html?didnotworked");
+        header("Location: ../index.php?didnotworked");
         exit();
     }
